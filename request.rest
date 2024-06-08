@@ -1,0 +1,23 @@
+GET http://localhost:5000/
+
+###
+
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+  "username": "res",
+  "email": "automasasaticd@hotmail.com",
+  "password": "abcde",
+  "confPassword": "abcde"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "email": "automaticd@hotmail.com",
+  "password": "abcde",
+}
+
