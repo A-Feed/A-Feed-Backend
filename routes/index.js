@@ -2,6 +2,7 @@ const express = require("express");
 const { getUsers } = require("../controllers/Users")
 const { Register } = require("../controllers/Regsiter")
 const { Login } = require("../controllers/Login")
+const userController = require("../controllers/auth/userController");
 
 
 

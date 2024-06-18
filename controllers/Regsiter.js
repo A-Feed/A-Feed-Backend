@@ -20,6 +20,7 @@ const Register = async (req, res) => {
     res.json({ msg: "Register Berhasil!" });
   } catch (error) {
     console.log(error);
+    res.status(500).json({ msg: "Terjadi kesalahan" });
   }
 };
 
