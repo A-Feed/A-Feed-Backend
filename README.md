@@ -22,7 +22,7 @@ The service available:
 
 # Instructions
  
-1. Install all dependencies with
+1. Clone this repository & Install all dependencies with
 ```bash
 npm install
 ```
