@@ -7,14 +7,17 @@ The project is being developed by a multidisciplinary team with expertise in mac
 
 By leveraging technology, A-Feed aims to transform traditional fish farming practices, making them more efficient, sustainable, and profitable for farmers in Indonesia
 
+## Cloud Architecture
+![CloudArchitecture](https://github.com/aanputra26/A-Feed-backend/blob/main/images/CLOUD%20ARCHITECTURE%20CAPSTONE%20(1).png)
+<br>
 > Base url of this service is: http://localhost:5000/
 
 The service available:
 
 - Authentications
   <pre>POST /login</pre>
-  <pre>POST  /register</pre>
-  <pre>POST  /refresh</pre>
+  <pre>POST /register</pre>
+  <pre>DELETE /logout</pre>
 
 
 # Instructions
@@ -23,7 +26,7 @@ The service available:
 ```bash
 npm install
 ```
-2. Make your database and export from database/botaniscan.sql
+2. Make your already create the database
 3. Run server:
 
 ```bash
