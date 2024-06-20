@@ -1,5 +1,5 @@
 <h1 align="center">Automatic Feed</h1>
-<p align="center">Cloud Computing Bangkit 2024 Capstone Project</p>
+<p align="center">Cloud Computing Team - Bangkit 2024 Capstone Project</p>
 
 A-Feed is an innovative project designed to revolutionize freshwater fish farming in Indonesia through the use of advanced technology. It focuses on developing an automatic feeding solution that leverages IoT (Internet of Things) and machine learning to optimize fish cultivation processes
 
