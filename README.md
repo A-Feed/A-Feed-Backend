@@ -15,8 +15,8 @@ By leveraging technology, A-Feed aims to transform traditional fish farming prac
 The service available:
 
 - Authentications
-  <pre>POST /login</pre>
   <pre>POST /register</pre>
+  <pre>POST /login</pre>
   <pre>DELETE /logout</pre>
 
 
@@ -60,11 +60,11 @@ REFRESH_TOKEN_SECRET= {define your refresh key}
 * [JsonwebtokenT](https://www.npmjs.com/package/jsonwebtoken)
 * [Bcrypt](https://www.npmjs.com/package/bcrypt)
 * [DotEnv](https://www.npmjs.com/package/dotenv)
-* [mysql2](https://www.npmjs.com/package/mysql2)
-* [cors](https://www.npmjs.com/package/cors)
-* [nodemon](https://www.npmjs.com/package/nodemon)
-* [sequelize](https://www.npmjs.com/package/sequelize)
-* [cookue-paarser](https://www.npmjs.com/package/cookie-parser)
+* [Mysql2](https://www.npmjs.com/package/mysql2)
+* [Cors](https://www.npmjs.com/package/cors)
+* [Nodemon](https://www.npmjs.com/package/nodemon)
+* [Sequelize](https://www.npmjs.com/package/sequelize)
+* [Cookie-parser](https://www.npmjs.com/package/cookie-parser)
 
 # Pull Requests
 We welcome and appreciate any pull requests to improve the TanamIn project. If you have a bug fix, enhancement, or new idea, please feel free to contact us.
