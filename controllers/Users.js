@@ -213,3 +213,52 @@ export const Logout = async (req, res) => {
     message: "Logout successfully",
   });
 };
+
+
+export const ChangePassword = async (req, res) => {
+  const { currentPassword, newPassword } = req.body;
+  const userId = req.user.userId; // Assuming userId is included in the authentication token
+
+  try {
+    const user = await Users.findByPk(userId);
+
+    if (!user) {
+      return res.status(404).json({
+        status: "error",
+        message: "User not found",
+      });
+    }
+
+    const match = await bcrypt.compare(currentPassword, user.password);
+
+    if (!match) {
+      return res.status(400).json({
+        status: "error",
+        message: "Current password is incorrect",
+      });
+    }
+
+    const salt = await bcrypt.genSalt();
+    const hashPassword = await bcrypt.hash(newPassword, salt);
+
+    await Users.update(
+      { password: hashPassword },
+      {
+        where: {
+          id: userId,
+        },
+      }
+    );
+
+    return res.status(200).json({
+      status: "success",
+      message: "Successfully changed user's password",
+    });
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({
+      status: "error",
+      message: "Failed to change user's password",
+    });
+  }
+};
